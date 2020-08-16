@@ -35,7 +35,7 @@ public class ExcelUtil {
 
     public static HSSFWorkbook createExcel(String fileName, String[] th){
             HSSFWorkbook workbook = new HSSFWorkbook();  //得到Excel工作簿对象
-            HSSFSheet sheet1 = workbook.createSheet("导出的工作表");   //得到Excel工作表对象
+            HSSFSheet sheet1 = workbook.createSheet(fileName);   //得到Excel工作表对象
             setTitle(workbook, sheet1, th);
             return workbook;
     }
@@ -97,7 +97,5 @@ public class ExcelUtil {
         }
         return null;
     }
-
-
 
 }
