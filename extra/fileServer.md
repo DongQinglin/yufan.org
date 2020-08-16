@@ -12,20 +12,20 @@ And we need to config the server to make our server to know the path is a static
 @Configuration
 public class WebConfigurer implements WebMvcConfigurer {
 	@Value("${personal-file-server.filepath}")
-    private String filepath;
+    	private String filepath;
 
 	public WebConfigurer() { super(); }
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/**")
-                .addResourceLocations("classpath:/META-INF/resources/")
-                .addResourceLocations("classpath:/resources/")
-                .addResourceLocations("classpath:/static/")
-                .addResourceLocations("classpath:/public/")
-                .addResourceLocations("file:" + filepath);
-        WebMvcConfigurer.super.addResourceHandlers(registry);
-    }
+		registry.addResourceHandler("/**")
+			.addResourceLocations("classpath:/META-INF/resources/")
+			.addResourceLocations("classpath:/resources/")
+			.addResourceLocations("classpath:/static/")
+			.addResourceLocations("classpath:/public/")
+			.addResourceLocations("file:" + filepath);
+		WebMvcConfigurer.super.addResourceHandlers(registry);
+	}
 }
 ```
 
