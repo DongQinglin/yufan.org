@@ -1,6 +1,8 @@
 I see. We use spring boot which has built-in server named tomcat. So we can give a static folder to save the files you want to download or upload. We can define a variable named personal-files or other name you like in your application.propertities. Like it:
 
-`personal-file-server.filepath= D:/uploadFilePath/`
+`personal-file-server.filepath= D:/uploadFilepath/`
+`spring.servlet.multipart.max-file-size=10MB`
+`spring.servlet.multipart.max-request-size=1000MB`
 
 Note: 
 On linux, we don't have the disk part. So you can update the path string.
