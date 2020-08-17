@@ -18,7 +18,7 @@ springboot	v2.3.1.RELEASE
 maven		v3.6.3
 gradle		v5.6.4
 ECMAscript	v1.7
-npm			6.14.4
+npm		v6.14.4
 node		v12.17.0
 angular		v10.0.0
 ```
