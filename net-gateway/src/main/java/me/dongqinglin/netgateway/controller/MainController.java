@@ -24,11 +24,13 @@ import java.util.Optional;
 @RestController
 @RequestMapping("api")
 public class MainController {
+
+    @Autowired
+    JwtUtil jwtUtil;
     @Autowired
     private AuthenticationManager authenticationManager;
     @Autowired
     private MyUserDetailService userDetailService;
-
     @Autowired
     private UserService userService;
 
@@ -45,7 +47,7 @@ public class MainController {
         final UserDetails userDetails = userDetailService
                 .loadUserByUsername(signInRequest.getUsername());
 
-        final String jwt = JwtUtil.generateToken(userDetails);
+        final String jwt = jwtUtil.generateToken(userDetails);
         result = new SignInResponse(jwt);
         return ResponseEntity.ok(result);
     }

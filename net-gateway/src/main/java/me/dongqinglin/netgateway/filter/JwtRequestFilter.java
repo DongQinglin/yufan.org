@@ -3,6 +3,7 @@ package me.dongqinglin.netgateway.filter;
 import me.dongqinglin.netgateway.serviceImpl.MyUserDetailService;
 import me.dongqinglin.netgateway.utils.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.core.annotation.Order;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -22,6 +23,9 @@ import java.io.IOException;
 public class JwtRequestFilter extends OncePerRequestFilter {
 
     @Autowired
+    JwtUtil jwtUtil;
+
+    @Autowired
     MyUserDetailService userDetailService;
 
     @Override
@@ -32,21 +36,28 @@ public class JwtRequestFilter extends OncePerRequestFilter {
         String jwt = null;
         if(authenticationHeader !=null && authenticationHeader.startsWith("Bearer ")){
             jwt = authenticationHeader.substring(7);
-            username = JwtUtil.extractUsername(jwt);
+            try {
+                username = jwtUtil.extractUsername(jwt);
+            } catch (Exception e) {
+                username = null;
+                filterChain.doFilter(request, response);
+            }
         }
 
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             UserDetails userDetails = this.userDetailService.loadUserByUsername(username);
-            if (JwtUtil.validateToken(jwt, userDetails)) {
+            if (jwtUtil.validateToken(jwt, userDetails)) {
                 UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(
                         userDetails, null, userDetails.getAuthorities()
                 );
                 usernamePasswordAuthenticationToken
                         .setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
+
+                response.setHeader("isAuthSuccess", "true");
             }
         }
-        response.setHeader("isAuthSuccess", "true");
+
         filterChain.doFilter(request, response);
     }
 }
