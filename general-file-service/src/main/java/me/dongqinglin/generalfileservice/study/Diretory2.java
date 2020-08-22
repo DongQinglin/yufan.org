@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public final class Diretory {
+public final class Diretory2 {
     public static File[] local(File dir, final String regex) {
         if (dir == null ) { return null;}
         if (regex == null || regex.isEmpty()) { return null;}

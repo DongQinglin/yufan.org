@@ -23,6 +23,11 @@ public class MainController {
         if (atUploadFolder) folderPath = fileService.uploadRoot() + folderPath;
         return folderPath;
     }
+    @PostMapping("dir")
+    Directory dir(@RequestBody DirFileRequest dirFileRequest) {
+        String folderPath = getFolderString(dirFileRequest.getFolderPath(), dirFileRequest.getAtStaticFolder(), dirFileRequest.getAtUploadFolder());
+        return fileService.dir(folderPath);
+    }
 
     @PostMapping("new-folder")
     Message newFolder(@RequestBody NewFolderRequest folderRequest){
