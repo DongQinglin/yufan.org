@@ -28,18 +28,5 @@ public class WebConfigurer implements WebMvcConfigurer {
         WebMvcConfigurer.super.addResourceHandlers(registry);
     }
 
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        // Add mapping path
-        // Which original domains are allowed
-        // Whether to send cookie information
-        // Which original domains are released (request method)
-        // Which original domains are allowed (header information)
-        registry.addMapping("/**")
-                .allowedOrigins("*")
-                .allowCredentials(true)
-                .allowedMethods("GET","POST", "PUT", "DELETE")
-                .allowedHeaders("*");
-    }
 
 }

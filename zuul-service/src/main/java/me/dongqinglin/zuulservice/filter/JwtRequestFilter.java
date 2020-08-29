@@ -18,7 +18,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Order(0)
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
 
@@ -32,16 +31,14 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
         final String authenticationHeader = request.getHeader("Authorization");
+        System.out.println("1 "+authenticationHeader);
         String username = null;
         String jwt = null;
         if(authenticationHeader !=null && authenticationHeader.startsWith("Bearer ")){
             jwt = authenticationHeader.substring(7);
-            try {
-                username = jwtUtil.extractUsername(jwt);
-            } catch (Exception e) {
-                username = null;
-                filterChain.doFilter(request, response);
-            }
+            username = jwtUtil.extractUsername(jwt);
+            System.out.println("2 "+username);
+
         }
 
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
@@ -53,7 +50,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
                 usernamePasswordAuthenticationToken
                         .setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
-
+                System.out.println("3 添加响应头");
                 response.setHeader("isAuthSuccess", "true");
             }
         }
