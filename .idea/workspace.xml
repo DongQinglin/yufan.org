@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="058c0d9e-5de8-4c8f-9468-c4e93318cf20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongqinglin/bootstart/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pedro-coder/src/main/java/me/dongqinglin/coder/BController/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pedro-coder/src/main/java/me/dongqinglin/coder/CServiceImpl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pedro-coder/src/main/java/me/dongqinglin/coder/DDaoApi/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pedro-coder/src/main/java/me/dongqinglin/coder/ZEntity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pedro-coder/src/main/java/me/dongqinglin/coder/ZEntity/UserMeta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../upload-file/src/main/java/me/dongqinglin/upload_file/serviceImpl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/AFilter/GatewayFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/BController/DevelopLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/BController/ProjectFlowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/BController/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/BController/UserMetaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/BController/WorksController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/CService/DevelopLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/CService/UserMetaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/CService/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/CService/WorksService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/CServiceImpl/DevelopLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/CServiceImpl/UserMetaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/CServiceImpl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/CServiceImpl/WorksServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/CServiceImplAlgorithm/WorksServiceImpDocumentAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DDAO/DevelopLogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DDAO/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DDAO/UserMetaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DDAO/WorksDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DFlieApi/MyFileSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DFlieApi/MyFileSystemImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DFlieApi/SerializeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DFlieApi/bean/DirectoryDefined.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DFlieApi/bean/FileDefined.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DOfiiceApi/ExcelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DOfiiceApi/ExcelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DOfiiceApi/MyOfficeBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DOfiiceApi/MyOfficeDirector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DOfiiceApi/MyOfficeDirectorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DOfiiceApi/MyWordBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DOfiiceApi/MyXlsExcelBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DOfiiceApi/MyXlsxExcelBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DOfiiceApi/WordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DOfiiceApi/bean/ParagraphDefined.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DStringApi/HtmlTransformWordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DStringApi/MyStrSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/DStringApi/MyStrSystemImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/YufanAdminApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/ZBean/FlowDefined.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/ZBean/MessageDefined.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/ZBean/UpdateWorksIdListRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/ZBean/UserManageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/ZConfig/MySQLConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/ZConfig/WebConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/ZEntity/DevelopLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/ZEntity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/ZEntity/UserMeta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/java/me/dongqinglin/admin/ZEntity/Works.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-admin/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/AFilter/GatewayFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/BController/UserMetaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/BController/WorksController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/CService/UserMetaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/CService/WorksService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/CServiceImpl/UserMetaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/CServiceImpl/WorksServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/DDAO/UserMetaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/DDAO/WorksDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/DFileApi/MyFileSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/DFileApi/MyFileSystemImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/DFileApi/bean/DirectoryDefined.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/DFileApi/bean/FileDefined.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/YufanUserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/ZBean/MessageDefined.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/ZConfig/MySQLConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/ZConfig/WebConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/ZEntity/UserMeta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yufan-user/src/main/java/me/dongqinglin/user/ZEntity/Works.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/AutoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/DAO/TableDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/DAO/TbAdmInfoDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/DAO/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/DAOImplement/TableDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/bean/GenerateFileRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/bean/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/bean/Table.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/config/MySQLConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/config/WebConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/controller/admin/GenerateFileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/controller/admin/TableController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/controller/admin/TbAdmInfoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/entity/TbAdmInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/filter/GatewayFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/service/ExtraFileService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/service/TableService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/service/TbAdmInfoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pedro-coder/src/main/java/me/dongqinglin/coder/CService/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/serviceImplement/ExtraFileServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/serviceImplement/TableServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/serviceImplement/TbAdmInfoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/serviceImplement/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/util/ExcelUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/java/me/dongqinglin/auto/util/FileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auto/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../document/cloud.vsdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../document/fileServer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/GeneralFileServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/CopyCutAndZipFileRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/DeleteFileRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/DirFileRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/Directory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/FileRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/FileServiceMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/NewFileOrEditRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/NewFolderRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/RenameFileRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/bean/ViewFileRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/config/WebConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/filter/GatewayFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/service/FileService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/serviceImpl/FileServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/study/DirList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/study/DirList2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/study/DirList3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/study/Diretory2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/study/DiretoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/java/me/dongqinglin/generalfileservice/util/FileUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../general-file-service/src/test/java/me/dongqinglin/generalfileservice/GeneralFileServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-center/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-center/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-center/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-center/src/main/java/me/dongqinglin/registrycenter/RegistryCenterApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-center/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registry-center/src/test/java/me/dongqinglin/registrycenter/RegistryCenterApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/DAO/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/ZuulServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/bean/MyUserDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/bean/SignInRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/bean/SignInResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/bean/SignUpResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/config/MySQLConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/config/WebConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/filter/JwtRequestFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/filter/UserTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/serviceImpl/MyUserDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/serviceImpl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/java/me/dongqinglin/zuulservice/util/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-service/src/test/java/me/dongqinglin/zuulservice/NetGatewayApplicationTests.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/dongqinglin/bootstart/MainApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/dongqinglin/bootstart/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="204">
+                <caret line="12" selection-start-line="12" selection-end-line="12" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/me/dongqinglin/bootstart/README.md" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/me/dongqinglin/bootstart/BootstartApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="708" />
+    <option name="y" value="205" />
+    <option name="width" value="1885" />
+    <option name="height" value="1063" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="boot-starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="boot-starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boot-starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="boot-starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boot-starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="boot-starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="boot-starter" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="058c0d9e-5de8-4c8f-9468-c4e93318cf20" name="Default Changelist" comment="" />
+      <created>1618489034739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618489034739</updated>
+      <workItem from="1618489037251" duration="3433000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3433000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="335" y="198" width="1885" height="1063" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959305" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Build" weight="0.32953367" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32953367" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32953367" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/dongqinglin/bootstart/entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/dongqinglin/bootstart/service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/dongqinglin/bootstart/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="204">
+            <caret line="12" selection-start-line="12" selection-end-line="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/dongqinglin/bootstart/MainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
