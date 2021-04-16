@@ -1,4 +1,4 @@
-package me.dongqinglin.bootstart;
+package me.dongqinglin.bootstarter;
 
 
 import org.springframework.boot.SpringApplication;

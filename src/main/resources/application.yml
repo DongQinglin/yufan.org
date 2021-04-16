@@ -1,4 +1,5 @@
-static-root: /file
+
+url-path: /flina/api
 database-name: flina
 database-user: root
 database-pass: rootroot
@@ -15,16 +16,12 @@ spring:
     url: jdbc:mysql://localhost:3306/${database-name}?serverTimezone=CST&useUnicode=true&characterEncoding=UTF-8
     username: ${database-user}
     password: ${database-pass}
-    driver-class-name: com.mysql.jdbc.Driver
-    dbcp2:
-      initial-size: 10
-      min-idle: 10
-      max-idle: 20
-      max-wait-millis: 500
-      time-between-eviction-runs-millis: 20000
-      remove-abandoned-timeout: 20000
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database: MYSQL
     show-sql: true
     hibernate:
       ddl-auto: update
+  data:
+    rest:
+      base-path: ${url-path}
