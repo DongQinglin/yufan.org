@@ -2,7 +2,7 @@ package me.dongqinglin.bootstarter.Secure.bean;
 
 public class UserLogupReq {
     private String username;
-    private String pass;
+    private String password;
     private String email;
 
     public String getUsername() {
@@ -13,12 +13,12 @@ public class UserLogupReq {
         this.username = username;
     }
 
-    public String getPass() {
-        return pass;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getEmail() {
@@ -33,7 +33,7 @@ public class UserLogupReq {
     public String toString() {
         return "UserLogupReq{" +
                 "username='" + username + '\'' +
-                ", pass='" + pass + '\'' +
+                ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }

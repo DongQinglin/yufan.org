@@ -27,12 +27,13 @@ public class FlinaUserController {
     public Message logIn(@RequestBody UserLoginReq request) {
         Message message = Message.createSuccessMessage("登陆成功");
         FlinaUser user = userService.getUser(request.getUsername());
-        if(user.getPassword() == request.getPass().hashCode()) {
+        if(user.getPassword() == request.getPassword().hashCode()) {
             FlinaUserDetail flinaUserDetail = new FlinaUserDetail(user);
             final String jwt = jwtUtil.generateToken(flinaUserDetail);
-            message.setExtra(jwt);
+
+            message.setExtra(new UserLoginRes(jwt, user.getId()));
         }
-        if(userService.auth(request.getUsername(), request.getPass())) return message;
+        if(userService.auth(request.getUsername(), request.getPassword())) return message;
         return Message.createIllegalMessage("登陆失败");
     }
 
@@ -40,7 +41,7 @@ public class FlinaUserController {
     public Message logUp(@RequestBody UserLogupReq request) {
         Message message = Message.createSuccessMessage("注册成功");
         if(userService.exists(request.getUsername())) return Message.createIllegalMessage("注册失败");
-        userService.addUser(request.getUsername(), request.getPass(), request.getEmail());
+        userService.addUser(request.getUsername(), request.getPassword(), request.getEmail());
         return message;
     }
 
@@ -50,7 +51,7 @@ public class FlinaUserController {
         FlinaUser user = userService.getUser(request.getUsername());
         Boolean flag = request.getEmail().equals(user.getEmail()) && request.getCode().equals(ServerSecureConfigContrant.CODE);
         if(!flag) return Message.createIllegalMessage("重设失败");
-        userService.saveUser(user, request.getPass());
+        userService.saveUser(user, request.getPassword());
         return message;
     }
 

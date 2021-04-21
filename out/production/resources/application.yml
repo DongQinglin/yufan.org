@@ -1,0 +1,27 @@
+
+url-path: /flina/api
+database-name: flina
+database-user: root
+database-pass: rootroot
+
+server:
+  port: 8080
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/${database-name}?serverTimezone=CST&useUnicode=true&characterEncoding=UTF-8
+    username: ${database-user}
+    password: ${database-pass}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  data:
+    rest:
+      base-path: ${url-path}

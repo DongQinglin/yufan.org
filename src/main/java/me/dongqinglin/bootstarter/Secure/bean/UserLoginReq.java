@@ -2,7 +2,7 @@ package me.dongqinglin.bootstarter.Secure.bean;
 
 public class UserLoginReq {
     private String username;
-    private String pass;
+    private String password;
 
     public String getUsername() {
         return username;
@@ -12,19 +12,19 @@ public class UserLoginReq {
         this.username = username;
     }
 
-    public String getPass() {
-        return pass;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
     public String toString() {
         return "UserLoginReq{" +
                 "username='" + username + '\'' +
-                ", pass='" + pass + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }

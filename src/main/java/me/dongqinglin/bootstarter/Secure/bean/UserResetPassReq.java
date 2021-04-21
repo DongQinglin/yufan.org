@@ -2,7 +2,7 @@ package me.dongqinglin.bootstarter.Secure.bean;
 
 public class UserResetPassReq {
     private String username;
-    private String pass;
+    private String password;
     private String code;
     private String email;
 
@@ -14,12 +14,12 @@ public class UserResetPassReq {
         this.username = username;
     }
 
-    public String getPass() {
-        return pass;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getCode() {
@@ -42,7 +42,7 @@ public class UserResetPassReq {
     public String toString() {
         return "UserResetPassReq{" +
                 "username='" + username + '\'' +
-                ", pass='" + pass + '\'' +
+                ", password='" + password + '\'' +
                 ", code='" + code + '\'' +
                 ", email='" + email + '\'' +
                 '}';
