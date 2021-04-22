@@ -31,7 +31,7 @@ public class FlinaUserController {
             FlinaUserDetail flinaUserDetail = new FlinaUserDetail(user);
             final String jwt = jwtUtil.generateToken(flinaUserDetail);
 
-            message.setExtra(new UserLoginRes(jwt, user.getId()));
+            message.setExtra(new UserLoginRes(jwt, user.getId(), user.getEmail()));
         }
         if(userService.auth(request.getUsername(), request.getPassword())) return message;
         return Message.createIllegalMessage("登陆失败");

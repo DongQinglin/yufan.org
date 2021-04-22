@@ -1,0 +1,10 @@
+[Unit]
+Description=A fast starter With Spring boot.
+
+[Service]
+PIDFile=/run/aiu.pid
+WorkingDirectory=/root/https/flina-yufan-spring
+ExecStart=/usr/bin/java -jar ./build/lib/flina-yufan-spring.jar
+
+[Install]
+WantedBy=multi-user.target
