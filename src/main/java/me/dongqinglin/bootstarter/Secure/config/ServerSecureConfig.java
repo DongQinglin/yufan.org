@@ -4,6 +4,7 @@ import me.dongqinglin.bootstarter.Secure.filter.JwtFilter;
 import me.dongqinglin.bootstarter.Secure.service.FlinaUserDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -17,6 +18,7 @@ import org.springframework.web.cors.CorsUtils;
 
 
 @EnableWebSecurity
+@Configuration
 public class ServerSecureConfig extends WebSecurityConfigurerAdapter {
 
 
@@ -49,6 +51,7 @@ public class ServerSecureConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 // deal with cross origin Options request
                 // .antMatchers("/any/**").permitAll()
+                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
                 .antMatchers(ServerSecureConfigContrant.anyUrl).permitAll()
                 .antMatchers(ServerSecureConfigContrant.coderUrl).hasRole("CODER")
                 .antMatchers(ServerSecureConfigContrant.adminUrl).hasRole("ADMIN")

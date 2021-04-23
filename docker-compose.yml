@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  flina:
+    image: dql19991112/pedro_ubuntu:latest
+    network_mode: "host"
+    volumes:
+      - /root/https/flina-yufan-aiu:/root/https/flina-yufan-aiu
+      - /root/https/flina-yufan-spring:/root/https/flina-yufan-spring
+

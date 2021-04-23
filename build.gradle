@@ -1,7 +1,5 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.3.3.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 }
 
 group 'me.dongqinglin'
@@ -18,22 +16,13 @@ dependencies {
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'
     compile group: 'org.apache.poi', name: 'poi', version: '4.1.2'
     compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
-    
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-//    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.5'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.4.5'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.4.5'
+
     
     testCompile group: 'junit', name: 'junit', version: '4.12'
     
 }
 
-ext {
-    set('springCloudVersion', "Hoxton.SR7")
-}
-
-dependencyManagement {
-    imports {
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-    }
-}
