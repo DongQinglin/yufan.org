@@ -30,10 +30,12 @@ public class Works {
 	private Boolean enable;
 	@Column(name="up_time", nullable=false, insertable=true, updatable=true)
 	private Date upTime;
+
 	@JsonIgnore
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="author_id")
 	private FlinaUser user;
+
 	@JsonIgnore
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="activity_id")

@@ -24,12 +24,12 @@ public class ServerConfig implements WebMvcConfigurer {
         WebMvcConfigurer.super.addResourceHandlers(registry);
     }
 
-    // @Override
-    // public void addCorsMappings(CorsRegistry registry) {
-    //     registry.addMapping("/**")
-    //             .allowedOrigins("*")
-    //             // .allowCredentials(true)
-    //             .allowedMethods("GET","POST", "PUT", "DELETE")
-    //             .allowedHeaders("*");
-    // }
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("*")
+                // .allowCredentials(true)
+                .allowedMethods("GET","POST", "PUT", "DELETE")
+                .allowedHeaders("*");
+    }
 }

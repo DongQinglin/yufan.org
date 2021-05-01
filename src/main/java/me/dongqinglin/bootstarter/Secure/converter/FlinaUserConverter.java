@@ -13,4 +13,12 @@ public class FlinaUserConverter {
         flinaUser.setUsername(username).setPassword(pass.hashCode()).setEmail(email).setEnable(DEFAULT_ENABLE).setRoles(DEFAULT_ROLE).setLevel(DEFAULT_LEVEL);
         return flinaUser;
     }
+
+    public static boolean isEmpty(String username, String pass, String email){
+        if(username == null || username.trim().isEmpty()) return true;
+        if(pass == null || pass.trim().isEmpty()) return true;
+        if(email == null || email.trim().isEmpty()) return true;
+
+        return false;
+    }
 }

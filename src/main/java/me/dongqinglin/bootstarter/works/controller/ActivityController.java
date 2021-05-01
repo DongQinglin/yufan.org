@@ -20,7 +20,7 @@ public class ActivityController {
 
     @GetMapping("/user/activity")
     public Message getActivity() {
-        Message message = Message.createIllegalMessage("正在查找id");
+        Message message = Message.createSuccessMessage("查找成功");
         List<Activity> activities = service.getEnableActivity();
         return message.setExtra(activities);
     }

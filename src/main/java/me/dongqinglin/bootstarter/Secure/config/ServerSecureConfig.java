@@ -49,8 +49,6 @@ public class ServerSecureConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable()
                 .authorizeRequests()
-                // deal with cross origin Options request
-                // .antMatchers("/any/**").permitAll()
                 .requestMatchers(CorsUtils::isPreFlightRequest).permitAll()
                 .antMatchers(ServerSecureConfigContrant.anyUrl).permitAll()
                 .antMatchers(ServerSecureConfigContrant.coderUrl).hasRole("CODER")

@@ -26,33 +26,47 @@ public class FlinaUserController {
     @PostMapping("/log-in")
     public Message logIn(@RequestBody UserLoginReq request) {
         Message message = Message.createSuccessMessage("登陆成功");
-        FlinaUser user = userService.getUser(request.getUsername());
-        if(user.getPassword() == request.getPassword().hashCode()) {
-            FlinaUserDetail flinaUserDetail = new FlinaUserDetail(user);
-            final String jwt = jwtUtil.generateToken(flinaUserDetail);
+        try {
+            FlinaUser user = userService.getUser(request.getUsername());
+            if(user.getPassword() == request.getPassword().hashCode()) {
+                FlinaUserDetail flinaUserDetail = new FlinaUserDetail(user);
+                final String jwt = jwtUtil.generateToken(flinaUserDetail);
 
-            message.setExtra(new UserLoginRes(jwt, user.getId(), user.getEmail()));
+                message.setExtra(new UserLoginRes(jwt, user.getId(), user.getEmail(), user.getUsername()));
+            }
+            if(userService.auth(request.getUsername(), request.getPassword())) return message;
+            return Message.createIllegalMessage("登陆失败");
+        } catch (Exception e) {
+            return Message.createIllegalMessage(e.toString());
         }
-        if(userService.auth(request.getUsername(), request.getPassword())) return message;
-        return Message.createIllegalMessage("登陆失败");
     }
 
     @PostMapping("/log-up")
     public Message logUp(@RequestBody UserLogupReq request) {
         Message message = Message.createSuccessMessage("注册成功");
-        if(userService.exists(request.getUsername())) return Message.createIllegalMessage("注册失败");
-        userService.addUser(request.getUsername(), request.getPassword(), request.getEmail());
+        try {
+            if (userService.exists(request.getUsername())) return Message.createIllegalMessage("注册失败");
+            userService.addUser(request.getUsername(), request.getPassword(), request.getEmail());
+
+        }catch (Exception e) {
+            return Message.createIllegalMessage(e.toString());
+        }
         return message;
     }
 
     @PostMapping("/reset-password")
     public Message resetPassword(@RequestBody UserResetPassReq request) {
         Message message = Message.createMessage("重设成功", 200);
-        FlinaUser user = userService.getUser(request.getUsername());
-        Boolean flag = request.getEmail().equals(user.getEmail()) && request.getCode().equals(ServerSecureConfigContrant.CODE);
-        if(!flag) return Message.createIllegalMessage("重设失败");
-        userService.saveUser(user, request.getPassword());
-        return message;
+        try {
+            FlinaUser user = userService.getUser(request.getUsername());
+            Boolean flag = request.getEmail().equals(user.getEmail()) && request.getCode().equals(ServerSecureConfigContrant.CODE);
+            if(!flag) return Message.createIllegalMessage("重设失败");
+            userService.saveUser(user, request.getPassword());
+            return message;
+        }catch (Exception e) {
+            return Message.createIllegalMessage(e.toString());
+        }
+
     }
 
     @PostMapping("/verification-code")

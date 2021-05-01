@@ -4,11 +4,13 @@ public class UserLoginRes {
     private String jwt;
     private int id;
     private String email;
+    private String username;
 
-    public UserLoginRes(String jwt, int id, String email) {
+    public UserLoginRes(String jwt, int id, String email, String username) {
         this.jwt = jwt;
         this.id = id;
         this.email = email;
+        this.username = username;
     }
 
     public String getJwt() {
@@ -35,12 +37,21 @@ public class UserLoginRes {
         this.email = email;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     @Override
     public String toString() {
         return "UserLoginRes{" +
                 "jwt='" + jwt + '\'' +
                 ", id=" + id +
                 ", email='" + email + '\'' +
+                ", username='" + username + '\'' +
                 '}';
     }
 }

@@ -35,11 +35,16 @@ public class WorksService {
     private WorksGroupRepo worksGroupRepo;
 
     public void saveWorks(WorksSaveRequest request) {
+        if(request.getContent().trim().isEmpty()) throw new IllegalArgumentException("不允许空值");
+        if(request.getStyle().trim().isEmpty()) throw new IllegalArgumentException("不允许空值");
+        if(request.getTitle().trim().isEmpty()) throw new IllegalArgumentException("不允许空值");
+        if(request.getActivityId() <= 0) throw new IllegalArgumentException("不允许空值");
+        if(request.getUserId() <= 0 ) throw new IllegalArgumentException("不允许空值");
         Optional<FlinaUser> byId = userRepo.findById(request.getUserId());
         if(!byId.isPresent()) throw new IllegalArgumentException("找不到用户");
         FlinaUser flinaUser = byId.get();
         Optional<UserMeta> byUser = userMetaRepo.findByUser(flinaUser);
-        if(!byUser.isPresent()) throw new IllegalArgumentException("找不到用户元数据");
+        if(!byUser.isPresent()) throw new IllegalArgumentException("未找到实名信息，请下滑进行实名认证");
         UserMeta userMeta = byUser.get();
         Optional<Activity> byId1 = activityRepo.findById(request.getActivityId());
         if(!byId1.isPresent()) throw new IllegalArgumentException("找不到活动");

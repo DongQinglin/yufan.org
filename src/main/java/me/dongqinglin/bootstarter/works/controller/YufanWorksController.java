@@ -25,7 +25,8 @@ public class YufanWorksController {
 
     @GetMapping("/user/works/author/{authorId}")
     public Message getAuthorWorks(@PathVariable String authorId) {
-        Message message = Message.createSuccessMessage("正在查找id");
+        if(authorId.trim().isEmpty()) return Message.createIllegalMessage("不允许空值");
+        Message message = Message.createSuccessMessage("查找成功");
         try {
             List<Works> authorWorks = service.getAuthorWorks(Integer.parseInt(authorId));
             message.setExtra(authorWorks);
@@ -37,7 +38,8 @@ public class YufanWorksController {
 
     @GetMapping("/user/works/{worksId}")
     public Message getWorks(@PathVariable String worksId) {
-        Message message = Message.createSuccessMessage("正在查找id");
+        if(worksId.trim().isEmpty()) return Message.createIllegalMessage("不允许空值");
+        Message message = Message.createSuccessMessage("查找成功");
         try {
             Works authorWorks = service.getWorks(Integer.parseInt(worksId));
             message.setExtra(authorWorks);
@@ -49,20 +51,20 @@ public class YufanWorksController {
 
     @PostMapping("/user/works")
     public Message save(@RequestBody WorksSaveRequest request) {
-        Message message = Message.createSuccessMessage("正在查找id");
+        Message message = Message.createSuccessMessage("保存成功");
         try {
             service.saveWorks(request);
         } catch (Exception e) {
             message = Message.createIllegalMessage(e.toString());
         }
-
-
         return message;
     }
 
-    @DeleteMapping("/user/works/{worksId}")
-    public Message deleteWorks(@PathVariable String worksId) {
-        Message message = Message.createSuccessMessage("正在查找id");
+    @GetMapping("/user/works/author/{authorId}/works/{worksId}")
+    public Message deleteWorks(@PathVariable String authorId, @PathVariable String worksId) {
+        if(authorId.trim().isEmpty()) return Message.createIllegalMessage("不允许空值");
+        if(worksId.trim().isEmpty()) return Message.createIllegalMessage("不允许空值");
+        Message message = Message.createSuccessMessage("删除成功");
         try {
             service.deleteWorks(Integer.parseInt(worksId));
         } catch (Exception e) {

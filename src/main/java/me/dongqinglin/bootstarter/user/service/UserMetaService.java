@@ -20,6 +20,7 @@ public class UserMetaService {
     private FlinaUserRepo userRepo;
 
     public UserMeta getUserMeta(String userId) {
+        if(userId.trim().isEmpty()) throw new IllegalArgumentException("不允许空值");
         Optional<FlinaUser> byId = userRepo.findById(Integer.parseInt(userId));
         if(!byId.isPresent()) throw new IllegalArgumentException("找不到用户");
         FlinaUser flinaUser = byId.get();
@@ -30,6 +31,11 @@ public class UserMetaService {
     }
 
     public void saveUserMeta(UserMeteSaveRequest request) {
+        if(request.getCollege().trim().isEmpty()) throw new IllegalArgumentException("不允许空值");
+        if(request.getConcat().trim().isEmpty()) throw new IllegalArgumentException("不允许空值");
+        if(request.getEmail().trim().isEmpty()) throw new IllegalArgumentException("不允许空值");
+        if(request.getName().trim().isEmpty()) throw new IllegalArgumentException("不允许空值");
+
         Optional<FlinaUser> byId = userRepo.findById(request.getUserId());
         if(! byId.isPresent()) throw new IllegalArgumentException("找不到用户");
         FlinaUser flinaUser = byId.get();
