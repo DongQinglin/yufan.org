@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+}
+
+group 'me.dongqinglin'
+version '0.1'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    maven { url "https://maven.aliyun.com/nexus/content/groups/public" }
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0'
+    implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '3.0.0'
+
+
+    implementation group: 'org.apache.commons', name: 'commons-pool2', version: '2.10.0'
+    implementation group: 'org.apache.poi', name: 'poi', version: '4.1.2'
+
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.5'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.4.5'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+
